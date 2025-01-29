@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Amazing places in Dushanbe</title>
+    <link rel="stylesheet" href="./css3/style.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Чиптаҳои ҳавопаймо</h1>
+        <p>Бо нархи дастрас ва ба саросари ҷаҳон аз сайти мо онлайн дастрас намоед!</p>
+    </header>
+
+    <section class="ticket-list">
+        <div class="ticket-item">
+            <h3>Душанбе - Москва</h3>
+            <p>Нарх: 50с</p>
+            <label for="concert-quantity">Миқдор:</label>
+            <input type="number" id="concert-quantity" value="1" min="1" max="10">
+            <button class="add-to-cart" onclick="addToCart('Concert', 50)">Харидан</button>
+        </div>
+
+        <div class="ticket-item">
+            <h3>Душанбе - Америка</h3>
+            <p>Нарх: 12с</p>
+            <label for="movie-quantity">Миқдор:</label>
+            <input type="number" id="movie-quantity" value="1" min="1" max="10">
+            <button class="add-to-cart" onclick="addToCart('Movie', 12)">Харидан</button>
+        </div>
+
+        <div class="ticket-item">
+            <h3>Душанбе - Америка</h3>
+            <p>Нарх: 30с</p>
+            <label for="sport-quantity">Миқдор:</label>
+            <input type="number" id="sport-quantity" value="1" min="1" max="10">
+            <button class="add-to-cart" onclick="addToCart('Sport', 30)">Харидан</button>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>Ҳамаги</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be added here -->
+        </ul>
+        <p id="total-price">Харид: 0с</p>
+        <button id="checkout-btn" onclick="checkout()">Checkout</button>
+    </section>
+    
+    <script src="./js3/main-es6.js"></script>
+    
+</body>
+</html>
